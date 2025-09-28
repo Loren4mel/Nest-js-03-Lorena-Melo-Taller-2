@@ -9,13 +9,13 @@ export class EmployeeService {
   private employees: BaseEmployee[] = [];
 
   // Inyección de dependencias: recibe el ApiService
-  constructor(private apiService: ApiService) {
+  constructor(private ApiService: ApiService) {
     //inyectar y se crea de forma automática con el parametro
   }
 
   // Cargar usuarios desde la API y convertirlos en empleados
   async loadEmployeesFromApi(): Promise<void> {
-    const users: User[] = await this.apiService.getUsers();
+    const users: User[] = await this.ApiService.getUsers();
 
     if (users.length === 0) {
       console.error("No se pudieron cargar usuarios desde la API");
