@@ -16,6 +16,6 @@ export class Manager extends BaseEmployee {
   }
 
   calculateSalary(): number {
-    return 4000 + (100 * this.teamSize);
+    return 4000 + (300 * this.teamSize);
   }
 }

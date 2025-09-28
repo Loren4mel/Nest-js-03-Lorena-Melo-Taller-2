@@ -16,8 +16,8 @@ export class Developer extends BaseEmployee {
     return `Developer: ${this.name}, Lenguajes: ${this.programmingLanguages.join(", ")}, programmingLanguages: ${this.programmingLanguages}`;
   }
  
-//Salario base 4000 + 200 por cada lenguaje de programación conocido
+//Salario base 3000 + 200 por cada lenguaje de programación conocido
   calculateSalary(): number {
-    return 4000 + (200 * this.programmingLanguages.length);
+    return 3000 + (200 * this.programmingLanguages.length);
   }
 }
